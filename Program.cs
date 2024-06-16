@@ -46,8 +46,11 @@ public class Program
         ////Test plugins from Directory structure
         //await CustomPluginFromDirectoryWithHistory.Test(kernel);
 
+        ////Test plugins from Directory structure
+        //await CustomPluginWithNativeCode.Test(kernel);
+
         //Test plugins from Directory structure
-        await CustomPluginWithNativeCode.Test(kernel);
+        await CustomPluginWithPromptAndNativeCodeCombo.Test(kernel);
 
     }
 }

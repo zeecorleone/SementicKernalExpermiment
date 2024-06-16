@@ -42,4 +42,13 @@ public class MusicLibraryPlugin
         return $"Added {song} to the recently played list";
     }
 
+    [KernelFunction, Description("Get a list of music available to the user")]
+    public static string GetMusicLibrary()
+    {
+        var dir = Directory.GetCurrentDirectory();
+        string filePath = $"{dir}\\Plugins\\data\\recentlyplayed.txt";
+        string content = File.ReadAllText(filePath);
+        return content;
+    }
+
 }
