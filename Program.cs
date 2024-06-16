@@ -40,8 +40,11 @@ public class Program
         ////Test prompt templating with "personas"
         //await PromptTemplatingWithPersonas.Test(kernel);
 
+        ////Test plugins from Directory structure
+        //await CustomPluginsFromDirectory.Test(kernel);
+
         //Test plugins from Directory structure
-        await CustomPluginsFromDirectory.Test(kernel);
+        await CustomPluginFromDirectoryWithHistory.Test(kernel);
 
     }
 }

@@ -26,6 +26,29 @@
     <None Update="Prompts\SuggestChords\skprompt.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Prompts\TravelPlugins\GetDestination\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Prompts\TravelPlugins\GetDestination\skprompt.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Prompts\TravelPlugins\SuggestActivities\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Prompts\TravelPlugins\SuggestActivities\skprompt.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Prompts\TravelPlugins\SuggestDestinations\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Prompts\TravelPlugins\SuggestDestinations\skprompt.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Prompts\TravelPlugins\SuggestActivities\" />
+    <Folder Include="Prompts\TravelPlugins\SuggestDestinations\" />
   </ItemGroup>
 
 </Project>
