@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Plugins\data\recentlyplayed.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Prompts\JsonToClass\config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -47,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Plugins\data\" />
     <Folder Include="Prompts\TravelPlugins\SuggestActivities\" />
     <Folder Include="Prompts\TravelPlugins\SuggestDestinations\" />
   </ItemGroup>
