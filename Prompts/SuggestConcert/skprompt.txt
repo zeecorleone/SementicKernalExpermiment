@@ -1,0 +1,8 @@
+Based on users's recently played song:
+{{$recentlyPlayedSongs}}
+
+And a list of concerts:
+{{$upcomingConcerts}}
+
+suggest an upcoming concert. The user lives in {{$location}},
+please recommend a relevent convert that is close to their location.
