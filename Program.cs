@@ -29,7 +29,7 @@ public class Program
         ////test sk
         //var result = await kernel.InvokePromptAsync("Give me a list of breakfast foods with eggs and cheese");
         //Console.WriteLine(result + "\n\n");
-        
+
         ////Test some Builtin Plugins
         //await BuiltInPlugins.Test(kernel);
 
@@ -37,8 +37,11 @@ public class Program
         //await PromptTemplating.Test(kernel);
 
 
-        //Test prompt templating with "personas"
-        await PromptTemplatingWithPersonas.Test(kernel);
+        ////Test prompt templating with "personas"
+        //await PromptTemplatingWithPersonas.Test(kernel);
+
+        //Test plugins from Directory structure
+        await CustomPluginsFromDirectory.Test(kernel);
 
     }
 }

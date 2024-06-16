@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Creates a code for c# class definition based on given sample JSON object",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "json",
+      "description": "The sample json object provided by user",
+      "required": true
+    }
+  ]
+}
