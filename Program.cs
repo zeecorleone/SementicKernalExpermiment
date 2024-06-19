@@ -56,7 +56,10 @@ public class Program
         //await Planner_ConcertSuggestion.Test(kernel);
 
         //Test plugins from Directory structure
-        await Planner_PlanTemplate.Test(kernel);
+        //await Planner_PlanTemplate.Test(kernel);
+
+        //Test auto-invoking of function
+        await AutomaticallyInvokeFunction.Test(kernel);
 
     }
 }
