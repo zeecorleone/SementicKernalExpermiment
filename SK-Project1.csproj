@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Plans\handlebarsTemplate.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Plugins\data\concertdates.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -60,6 +63,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Plans\" />
     <Folder Include="Plugins\data\" />
     <Folder Include="Prompts\TravelPlugins\SuggestActivities\" />
     <Folder Include="Prompts\TravelPlugins\SuggestDestinations\" />

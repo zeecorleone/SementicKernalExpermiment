@@ -18,10 +18,10 @@ public class Program
 #pragma warning disable SKEXP0050 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
         
         //add built-in time plugin
-        builder.Plugins.AddFromType<TimePlugin>();
+        //builder.Plugins.AddFromType<TimePlugin>();
 
         //add built-in ConversationSummary plugin
-        builder.Plugins.AddFromType<ConversationSummaryPlugin>();
+        //builder.Plugins.AddFromType<ConversationSummaryPlugin>();
 #pragma warning restore SKEXP0050 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
         var kernel = builder.Build();
@@ -52,8 +52,11 @@ public class Program
         ////Test plugins from Directory structure
         //await CustomPluginWithPromptAndNativeCodeCombo.Test(kernel);
 
+        ////Test plugins from Directory structure
+        //await Planner_ConcertSuggestion.Test(kernel);
+
         //Test plugins from Directory structure
-        await Planner_ConcertSuggestion.Test(kernel);
+        await Planner_PlanTemplate.Test(kernel);
 
     }
 }

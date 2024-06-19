@@ -1,0 +1,22 @@
+{{#if suggestConcert}}
+    {{! Step 0: Extract Key Values}}
+    {{set "location" location}}
+    {{set "userRecentlyPlayed" (MusicLibraryPlugin-GetRecentPlays)}}
+
+    {{! Step 1: Suggest a concert based on user's recently played music and location}}
+    {{set "concertSuggestion" (Prompts-SuggestConcert upcomingConcerts=(MusicConcertPlugin-GetTours) recentlyPlayedSongs=userRecentlyPlayed location=location)}}
+
+    {{! Step 2: Output the concert suggestion}}
+    {{json concertSuggestion}}
+
+{{else}}
+    {{! Step 0: Extract Key Values}}
+    {{set "recentlyPlayedSongs" (MusicLibraryPlugin-GetRecentPlays)}}
+    {{set "musicLibrary" (MusicLibraryPlugin-GetMusicLibrary)}}
+
+    {{! Step 1: Suggest a song from the music library based on recently played songs}}
+    {{set "suggestedSong" (SuggestSongPlugin-SuggestSong recentlyPlayedSongs=recentlyPlayedSongs musicLibrary=musicLibrary)}}
+
+    {{! Step 2: Output the suggested song as JSON}}
+    {{json suggestedSong}}
+{{/if}}
