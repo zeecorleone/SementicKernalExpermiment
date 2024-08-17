@@ -9,7 +9,7 @@ namespace AITravelAgent;
 
 internal class Program
 {
-    public static async Task Main(string[] args)
+    public static async Task Main22(string[] args)
     {
         var builder = Kernel.CreateBuilder();
         builder.AddOpenAIChatCompletion(
